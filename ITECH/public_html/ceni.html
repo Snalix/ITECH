@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Ценоразпис</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="cenicss.css" rel="stylesheet" type="text/css"/>
+        <link rel="icon" href="favicon_1.ico" type="image/x-icon">
+        <link href="https://fonts.googleapis.com/css?family=Jura" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+    </head>
+    <body>
+        <nav>
+            <div class="bord">
+            
+      <div class="navbar">
+  <a href="nachalo.html">Начало</a>
+  <a href="zapisvane.html">Записване</a>
+  <a href="kontakti.html">Контакти</a>
+  <div class="dropdown">
+    <button class="dropbtn">За курса
+      
+    </button>
+    <div class="dropdown-content">
+      <a href="kurss.html">Същност на курса</a>
+      <a href="predimstva.html">Предимства</a>
+      <a href="ceni.html">Ценоразпис</a>
+     
+    </div>
+  </div> 
+</div>
+            </div>
+                   
+               
+                    
+            
+           
+        </nav>
+        <a href="nachalo.html">
+        <img class="logo" src="logo1.png" alt="logo">
+        </a>
+        <a  href="nachalo.html">
+        <h1>Ценоразпис</h1>
+        </a>
+       
+        <header>
+            
+           </header>
+                
+       
+        
+            
+        
+            
+        
+        
+        <div class="only">
+            <br>
+            <br>
+            
+            <center>
+            <table style="width:60%">
+                <tr>
+                    <td><b>Ниво А - всичко за интернет</b> </td><td><b>50 лева</b></td>
+                    
+                </tr>
+                <tr>
+                    <td><b>Ниво B - създаване на WEB страница </b></td><td><b>60 лева</b></td>
+                </tr>
+                <tr>
+                    <td><b>Ниво C - jQuery,JavaScript</b> </td><td><b>75 лева</b></td>
+                </tr>
+                <tr>
+                    <td><b>Ниво D - киберсигурност </b></td><td><b>110 лева</b></td>
+                </tr>
+                <tr>
+                    <td><b>Тест - защита на ниво</b> </td><td><b>30 лева</b></td>
+                </tr>
+                <tr>
+                    <td><b>Издаване на сертификат</b></td><td><b>25 лева</b></td>
+                </tr>
+                
+            </table>
+            </center>
+            <hr>
+            <center>
+            <p class="center">Изведи обща сума</p>
+            <button class="button" onclick="myFunction()">Изведи</button>
+            <p class="centerr">Обща сума: <span id="ceni"></span></p>
+            <script>
+                var numbers=[50,60,75,110,30,25];
+                function getSum(total,num){
+                    return total+num;
+                }
+                function myFunction(){
+                    document.getElementById("ceni").innerHTML=numbers.reduce(getSum)+("лв");
+                }
+                </script>
+            </center>
+        </div>
+        <footer>
+            <br>
+            ITECH&COPY;All Rights Reserved.&reg
+        </footer>
+    </body>
+</html>
